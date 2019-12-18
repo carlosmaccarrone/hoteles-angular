@@ -1,0 +1,104 @@
+.row {
+  display: block;
+  margin: auto;
+  width: 60%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 5px 5px 5px 5px;
+  height: 250px;
+}
+
+.sombras {
+  border: 1px solid grey;
+  box-shadow: 3px 3px 3px 3px grey;
+}
+
+.foto {
+  float: left;
+  display: block; 
+  width: 225px;
+  height: 225px;
+  margin-left: 2%;
+  margin-top: 1.6%; 
+  border-radius: 5px 5px 5px 5px;
+}
+
+.info {
+  float: left;
+  display: block; 
+  margin-top: 1%;
+  margin-left: 5%;
+  font-family: ubuntu;
+}
+
+.nombre {
+  font-size: 24px;	
+}
+
+.ubicacion {
+  float: left;
+  font-size: 18px;  
+  margin-top: 50px;
+}
+
+.puntaje {
+  float: left;
+  font: 20px FontAwesome;
+  color: #e6e600;  
+}
+
+.precio {
+  float: right;
+  display: block;
+  font-family: baloo;
+  font-size: 32px;
+  margin-top: 1%;
+  margin-right: 5%;
+  color: #0099ff;
+}
+
+.puntaje[cantidad="1"]:before {
+  content: '\f005';
+}
+
+.puntaje[cantidad="2"]:before {
+  content: '\f005\f005';
+}
+
+.puntaje[cantidad="3"]:before {	
+  content: '\f005\f005\f005';
+}
+
+.puntaje[cantidad="4"]:before {
+  content: '\f005\f005\f005\f005';
+}
+
+.puntaje[cantidad="5"]:before {	
+  content: '\f005\f005\f005\f005\f005';
+}
+
+.showReservas {
+  float: right;
+  margin-top: 1%; 
+}
+
+.reservasFechas {
+  margin-left: -50%;
+}
+
+.reservasNoches {
+  margin-left: -40%;
+}
+
+.reservasPrecio {
+  font-family: baloo;
+  font-size: 32px;
+  color: #0099ff;
+  margin-left: -40%;
+}
+
+.reservasBoton {
+  color: white;
+  background-color: #b30000;
+  margin-left: -30%;
+}

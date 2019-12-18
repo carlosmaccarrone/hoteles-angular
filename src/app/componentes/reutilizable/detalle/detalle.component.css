@@ -1,0 +1,49 @@
+.contenedor {
+  height: 800px;
+  margin-bottom: 5%;
+}
+
+.detalleHead {
+  text-align: center;
+  margin-top: 1%;	
+}
+
+.detalleBottom {
+  position: relative;
+  bottom: -40%;
+  margin-left: 15%;
+  width: 70%;
+  height: 200px;
+}
+
+.sombras {
+  border: 1px solid grey;
+  box-shadow: 3px 3px 3px 3px grey; 
+}
+
+.alineado {
+  float: left;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+
+.precioTotal {
+  font-family: ubuntu-medium;
+  float: left;
+  margin-left: 20%;
+  margin-top: 8%;
+  font-size: 22px;
+}
+
+.boton {
+  float: right;
+  margin-top: 8%;
+  margin-right: 10%;
+  background-color: #0099ff; 
+  color: white;
+}
+
+.conColorError {
+  color: black;
+  background-color: red;
+}

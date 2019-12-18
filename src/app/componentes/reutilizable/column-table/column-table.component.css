@@ -1,0 +1,59 @@
+.izq {
+  float: left;
+  position: absolute;
+  left: 15%;
+}
+
+.der {
+  float: right;
+  position: absolute;
+  right: 15%;
+}
+
+.marco {
+  width: 30%;
+  height: 250px;
+  margin-bottom: 1%;
+}
+
+.sombras {
+  border: 1px solid grey;
+  box-shadow: 3px 3px 3px 3px grey;	
+}
+
+.subTitulo {
+  font-family: ubuntu;
+  font-size: 24px;
+  display: inline-block;
+  margin-top: 2%;
+  /* BORDER 0 POR TABLE*/
+  border: 0;
+}
+
+.contenedorTablaBody {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 170px; 
+}
+
+.contenido {
+  margin-left: 5%;
+  /* BORDER 0 POR TABLE*/  
+  border: 0;
+}
+
+.checkboxes {
+  float: left;
+}
+
+.precio {
+  font-family: ubuntu;
+  float: right;
+  position: relative;
+  left: 50%;
+}
+
+.conMarcoRojo {
+  border: 1px solid red;
+  box-shadow: 3px 3px 3px 3px red; 
+}

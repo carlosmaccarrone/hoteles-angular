@@ -1,0 +1,27 @@
+mat-datepicker-toggle {
+  color: black !important;
+}
+
+mat-datepicker-toggle:hover {
+  color: #0099ff !important;
+}
+
+::ng-deep.mat-focused .mat-form-field-ripple {
+  background-color: transparent !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  background-color: black !important;
+} 
+
+::ng-deep.mat-form-field-ripple {
+  background-color: black !important;
+}
+
+::ng-deep.mat-form-field-label {
+  color: black !important;
+}
+
+::ng-deep.conRojo {
+  color: red !important;
+}

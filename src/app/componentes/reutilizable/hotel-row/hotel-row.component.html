@@ -1,0 +1,22 @@
+<span *ngIf="isLoaded()">
+  <span (click)="esListaDeHoteles() && navegarADetalle()" class="row" [ngClass]="{'sombras':esListado()}" [title]="esListaDeHoteles() && esListado() ? '(click) detalle de hotel' : ''">
+
+    <span class="foto" [ngStyle]="{'background':rutaFoto}"></span>
+
+      <span class="info">
+	    <span class="nombre">{{getHotelName()}}</span><br>
+	    <span class="puntaje" [attr.cantidad]="getHotelScore()"></span><br>
+		
+        <span class="ubicacion"><fa-icon [icon]="faMapMarkerAlt"></fa-icon>&nbsp;&nbsp;{{getHotelLocation()}}</span>
+	  </span>
+
+    <span *ngIf="esListaDeHoteles()" class="precio">${{getHotelMinPrice()}}</span>
+
+    <span *ngIf="esListaDeReservas()" class="showReservas">
+      <span class="reservasFechas">{{getFechaDesdeString()}} - {{getFechaHastaString()}}</span><br>
+      <span class="reservasNoches">{{getCantidadDeNoches()}} noches</span><br><br>
+      <span class="reservasPrecio">$ {{getPrecioFinal() | number:'1.0-2':'es' }}</span><br><br>
+      <button class="btn reservasBoton" (click)="cancelarReserva()" *ngIf="esCancelable()">Cancelar</button>
+    </span>
+  </span>
+</span>

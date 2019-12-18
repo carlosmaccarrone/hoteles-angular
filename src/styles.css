@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/purple-green.css";
+
+@font-face {
+	font-family: baloo;
+	src: url(assets/font/BalooBhaina-Regular.ttf); 
+}
+
+@font-face {
+	font-family: ubuntu;
+	src: url(assets/font/Ubuntu-Regular.ttf); 
+}
+
+@font-face {
+	font-family: ubuntu-medium;
+	src: url(assets/font/Ubuntu-Medium.ttf); 
+}
+
+@font-face {
+	font-family: ubuntu-bold;
+	src: url(assets/font/Ubuntu-Bold.ttf); 
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

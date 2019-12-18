@@ -1,0 +1,27 @@
+<div class="contenedor">
+
+  <div class="detalleHead">
+    <app-hotel-row [hotel]=getHotelDetalle() [service]="getHotelService()"></app-hotel-row>
+  </div>
+
+  <app-column-table [service]="getDormitorioService()"></app-column-table>
+
+  <app-column-table [service]="getAdicionalesService()"></app-column-table>
+
+  <div class="detalleBottom sombras">
+
+    <span class="alineado">
+      <app-datepicker [service]="getFechaDesdeService()" (pasajeFecha)="setFechaDesde($event)"></app-datepicker><br>
+	    <app-datepicker [service]="getFechaHastaService()" (pasajeFecha)="setFechaHasta($event)"></app-datepicker>
+    </span>
+
+    <span class="precioTotal">
+    	$ {{ getPrecioTotal() | number:'1.0-2':'es' }}
+    </span>
+
+    <button class="btn boton" [ngClass]="{'conColorError':getButtonError()}" (click)="generarReserva()">Reservar</button>
+
+  </div>
+
+</div>
+

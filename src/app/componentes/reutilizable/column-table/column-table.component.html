@@ -1,0 +1,14 @@
+<div class="marco sombras" [ngClass]="getCheckbox() ? 'der' : 'izq'" [class.conMarcoRojo]="getConOtroMarco()">
+  <table class="table">
+    <thead><tr><th class="subTitulo" (click)="impresion()">{{getTitulo()}}</th></tr></thead>
+      <div class="contenedorTablaBody">
+        <tbody>
+          <tr *ngFor="let elemento of getElementos(); let indice = index">
+            <td class="contenido">
+              <span class="checkboxes"><input type="radio" name="dormitorio" *ngIf="getRadiobox()" (change)="cambiarPrecioDormitorio(elemento[1])" [checked]="isRadioChecked(elemento[1])"><input type="checkbox" *ngIf="getCheckbox()" (change)="manejarServicio(elemento[1], indice)" [checked]="serviciosSeleccionados[indice][2]">&nbsp;&nbsp;{{elemento[0]}}</span><span class="precio">${{elemento[1]}}</span>      
+            </td>
+          </tr>
+        </tbody>
+      </div>
+  </table>
+</div>

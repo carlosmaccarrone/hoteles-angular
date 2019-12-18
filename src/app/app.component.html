@@ -1,0 +1,22 @@
+<div>  
+  <div class="card-header">
+  
+  	<fa-icon [icon]="faBed"></fa-icon>
+  	<span class="titulo">&nbsp;&nbsp;EH!</span>
+    
+    <span class="userMenu">
+    	<select class="custom-select">
+    		<option [ngValue]="ruta" (click)="navegarAHome()">{{getUserName()}}</option>
+    		<option (click)="navegarAHoteles()">Listado de Hoteles</option>
+    		<option (click)="navegarAReservas()">Mis Reservas</option>
+    	</select>
+    </span>
+
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
+
+
+
+

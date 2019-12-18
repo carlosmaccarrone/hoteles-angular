@@ -1,0 +1,11 @@
+.contenedor {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+.titulo {
+  font-size: 36px;
+  font-family: ubuntu-medium;
+  color: #0099ff;
+}

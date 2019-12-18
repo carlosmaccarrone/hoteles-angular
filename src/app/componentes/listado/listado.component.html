@@ -1,0 +1,15 @@
+<div class="contenedor">
+
+  <span *ngIf="isLoaded() && !reutilizoRuta()">	
+    <span class="titulo">{{getTitulo()}}</span>
+	
+    <div *ngFor="let hotel of getHoteles()">
+      <app-hotel-row [hotel]=hotel [service]="getService()"></app-hotel-row>
+    </div>
+  </span>
+
+  <span *ngIf="reutilizoRuta()">
+  	<app-detalle></app-detalle>
+  </span>
+
+</div>
